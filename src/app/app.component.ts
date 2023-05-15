@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'basics-assignment-2-start';
+  username: String =""
+  constructor(){
+  }
+
+  resetUsername(){
+    if(this.username.length !==0){
+      this.username="";
+    }
+  }
+
+
 }

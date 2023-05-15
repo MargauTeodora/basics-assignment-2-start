@@ -1,6 +1,8 @@
 <label>Username: </label>
 <input type ="text"
   [(ngModel)] = "username">
-<p innerText="username"></p>
 
-<button>Save username/button>
+<p innerText={{username}}></p>
+
+<button [disabled] = "username.length === 0" (click)="resetUsername()">
+  Reset username</button>
